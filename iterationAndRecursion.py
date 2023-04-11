@@ -12,11 +12,14 @@ def factorial_iterative(num):
 
 def main ():
     numlist = [0, 5, 10, 25, 100]
+    print("Factorial results using an iterative function")
+    for num in numlist:
+        print (f'{num}!={factorial_iterative(num)}')
+    print("Factorial results using a recursive funtion")
+    for num in numlist: 
+        print(num, '!=', factorial_recursive(num))
 
+        
 
-
-
-
-
-
-if __name__"__main__":
+if __name__ == "__main__":
+    main()
